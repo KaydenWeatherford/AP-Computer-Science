@@ -14,7 +14,7 @@ public class Prog54c {
         System.out.println("The circumference of the circle is: " + circ);
 
         double area = pi * Math.pow(r, 2);
-        System.out.println("The area of the circle is: " + area);
+        System.out.printf("The area of the circle is: %.3f" + area);
 
         /*
         Enter the Radius: 3.712
