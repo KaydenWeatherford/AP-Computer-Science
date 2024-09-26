@@ -32,21 +32,19 @@ public class Prog93a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
+/*
+How many Kilowatts did you use?
+993
+----------
+You used 993 Kilowatts
+----------
+Base rate = 993 @ $0.0475 = $47.17
+Surcharge = $4.72
+City Tax  = $1.42
+----------
+Total Due = $53.31
+After May 20th = 55.44
+
+ */
