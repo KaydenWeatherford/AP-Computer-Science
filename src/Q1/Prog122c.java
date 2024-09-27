@@ -3,17 +3,11 @@ import java.lang.Math;
 
 public class Prog122c {
     public static void main(String[] args) {
-
-        int e = 0;
-        int o = 1;
-        int f = 0;
-        int sqr;
+        int e = 0;int o = 1;int f = 0;int sqr;
 
         for (int i = 0; i < 5; i++)
         {
-            e +=2;
-            o +=2;
-            f +=4;
+            e +=2;o +=2;f +=4;
             sqr = (int)Math.pow(e,2);
             System.out.println(e + "   " + o + "   " + f + "   " + sqr);
         }
