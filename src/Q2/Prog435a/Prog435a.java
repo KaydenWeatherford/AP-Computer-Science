@@ -34,7 +34,7 @@ public class Prog435a {
             type = FreddyFagBear.getType();
             gate = FreddyFagBear.getGate();
 
-            FreddyFagBear.toString(cnt);
+            FreddyFagBear.toString();
         } catch (IOException e) {
             System.out.println("Error: " + e);
         }
