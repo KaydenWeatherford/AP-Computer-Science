@@ -3,13 +3,9 @@ package Q3.Farm;
 import java.util.ArrayList;
 
 public interface IFarm {
-    private boolean feedCows() {
-        return false;
-    }
+    boolean feedCows();
 
-    private boolean feedHorses() {
-        return false;
-    }
+    boolean feedHorses();
 
     /**
      * Feeds all cows and horses where farm has enough food
@@ -25,13 +21,12 @@ public interface IFarm {
         return 0;
     }
 
+
     /**
      * Calculates the value of the rides given by the horses
      * ride value of each horse changes based on the horse
      */
-    private double horseIncome() {
-        return 0;
-    }
+    double horseIncome();
 
     /**
      * Calculates the daily income of the farm
@@ -39,7 +34,8 @@ public interface IFarm {
     double farmIncome();
 
     // Calculates the total weight of all the farm animals
-    int getWeight();
+    public int getWeight();
+
 
     // Calculates the amount of money it will
     // take to feed the animals for the day

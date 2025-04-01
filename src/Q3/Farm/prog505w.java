@@ -57,15 +57,15 @@ public class prog505w {
             for (int a = 0; a < animals.size(); a++) {
                 if (animals.get(a) instanceof Cow) {
                     Cow whar = (Cow) animals.get(a);
-                    dayTotal += whar.Value(cornCost, hayCost);
-                    if (whar.Value(cornCost, hayCost) > highestValCow) {
+                    dayTotal += whar.Value();
+                    if (whar.Value() > highestValCow) {
                         highValCowIndex = a;
-                        highestValCow = whar.Value(cornCost, hayCost);
+                        highestValCow = whar.Value();
                     }
                 }
                 if (animals.get(a) instanceof Horse) {
                     Horse har = (Horse) animals.get(a);
-                    dayTotal += har.Value(cornCost, hayCost);
+                    dayTotal += har.Value();
                 }
             }
             System.out.printf("$%.2f is the total income for the day.\n", dayTotal);
@@ -98,7 +98,7 @@ public class prog505w {
             for (int a = 0; a < animals.size(); a++) {
                 if (animals.get(a) instanceof Horse) {
                     Horse horse = (Horse) animals.get(a);
-                    double horseVal = horse.Value(cornCost, hayCost);
+                    double horseVal = horse.Value();
                     if (horseVal < minHorseVal) {
                         minHorseIndex = a;
                         minHorseVal = horseVal;

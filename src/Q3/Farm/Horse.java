@@ -10,8 +10,8 @@ public class Horse extends Animal {
         myRideCost = cost;
     }
 
-    public double Value(double cornCost, double hayCost) {
-        return (myNumRides * myRideCost - getFeedCost(cornCost, hayCost));
+    public double Value() {
+        return (myNumRides * myRideCost);
     }
 
     @Override
@@ -26,5 +26,6 @@ public class Horse extends Animal {
     public double getRideCost() {
         return myRideCost;
     }
+
 
 }

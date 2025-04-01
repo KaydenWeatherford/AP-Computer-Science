@@ -1,0 +1,54 @@
+Program 505T
+(cows and horses)
+
+Program Description:
+Read from the data file,
+the first number of the data file will
+represent the number of hay bales the farm
+currently has. It is followed by the cost of
+each hay bale.
+
+The next number is the number of corncobs the
+farm has, followed by the cost of each corncob.
+The data file will then provide the number of
+cows that are stored in the data file.  Each
+cow has a weight, followed by pounds of milk
+produced per day, followed by the number of
+hay bales eaten each day per cow, followed by
+a number of corncobs eaten each day per cow.
+
+The next set of data will have an int for the
+number of horses.  Their weight comes next.
+This will be followed by the number of hay
+bales eaten each day, followed by the number
+of corncobs eaten each day, followed by the
+number of rides that horse gave and the cost
+per ride for that horse.
+
+Complete the farm, horse and cow classes -
+be sure to create constructors for each of
+the classes.
+
+X - Report the income of the day,
+X - Report the cost of feeding the animals for a day
+X - Report the cumulative weight of all animals.
+- It should determine if there is enough food to
+feed all the animals, if so, feed all the
+animals
+- Report how many bales of hay and cobs of corn
+are left in the barn.
+If there is not enough food for ALL the animals,
+none of the animals get fed ☹ Report that there is insufficient food to feed the animals and request
+an immediate shipment of hay and corn for the
+amount of needed of each.
+
+o   Sell off the 3 cows that generate the lowest amount of milk.
+o   Sell off the two horses that generate the lowest amount of ride income.
+o   Change the first cow.   The cow has a weight of 1250, followed by 80 pounds of milk produced per day, followed by the number of 3 hay bales eaten each day, followed by 4 corncobs eaten each day.
+o   Report the total number of cows and horses on the farm.
+
+A pound of milk sells for $0.20.
+
+Statements Required:  input, output, loop control, arrays, classes
+
+Data Location prog505t.dat

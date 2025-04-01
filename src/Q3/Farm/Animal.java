@@ -1,10 +1,10 @@
 package Q3.Farm;
 
 public abstract class Animal {
-    private final String myname;
-    private final int myweight;
-    private final int myNumCorn;
-    private final int myNumHayBales;
+    private String myname;
+    private int myweight;
+    private int myNumCorn;
+    private int myNumHayBales;
 
     public Animal(String name, int weight, int corn, int hay) {
         myname = name;
@@ -13,7 +13,7 @@ public abstract class Animal {
         myNumHayBales = hay;
     }
 
-    public abstract double Value(double cornCost, double hayCost);
+    public abstract double Value();
 
     public String getName() {
         return myname;
@@ -33,6 +33,18 @@ public abstract class Animal {
 
     public double getFeedCost(double cornCost, double hayCost) {
         return (myNumCorn * cornCost) + (myNumHayBales * hayCost);
+    }
+
+    public void setWeight(int weightz) {
+        myweight = weightz;
+    }
+
+    public void setNumCorn(int cornz) {
+        myNumCorn = cornz;
+    }
+
+    public void setNumHayBales(int balez) {
+        myNumHayBales = balez;
     }
 
 }
