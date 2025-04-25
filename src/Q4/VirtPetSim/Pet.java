@@ -6,12 +6,14 @@ public abstract class Pet {
     private int hunger;
     private int energy;
     private int happiness;
+    private int health;
     public static final int MAX_HUNGER = 100;
     public static final int MAX_ENERGY = 100;
     public static final int MAX_HAPPINESS = 100;
 
     public Pet(String name) {
         this.name = name;
+        this.health = 100;
         this.hunger = 50;    // Midpoint of hunger
         this.energy = 50;    // Midpoint of energy
         this.happiness = 50; // Midpoint of happiness
@@ -34,6 +36,10 @@ public abstract class Pet {
         return happiness;
     }
 
+    public int getHealth() {
+        return health;
+    }
+
     public String getImage() {
         return image;
     }
@@ -50,9 +56,14 @@ public abstract class Pet {
         this.happiness = happiness;
     }
 
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
     public void setImage(String image) {
         this.image = image;
     }
+
 
     // Implement in the child classes
     public abstract void feed();
