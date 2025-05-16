@@ -7,6 +7,7 @@ public class Book extends Media {
     private String genre;
     private int year;
     private int pages;
+    private double price;
     private static final String[] genres = {"Anthology", "Autobiography", "Biography", "Children's",
             "Classic Literature", "Coming-of-Age", "Contemporary", "Cozy Mystery", "Crime", "Dark Fantasy", "Detective",
             "Drama", "Dystopian", "Epic Fantasy", "Essay Collection", "Fairy Tale Retelling", "Fantasy", "Fiction Historical",
@@ -25,6 +26,7 @@ public class Book extends Media {
         genre = genres[rand.nextInt(0, genres.length - 1)];
         year = rand.nextInt(1945, 2025);
         pages = rand.nextInt(1, 401);
+        price = (rand.nextDouble() * (2000 - 1000) + 1000) / 100;
     }
 
     public String getAuthor() {
@@ -43,6 +45,10 @@ public class Book extends Media {
         return pages;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -52,6 +58,7 @@ public class Book extends Media {
                 ", genre='" + genre + '\'' +
                 ", year=" + year +
                 ", pages=" + pages +
+                ", price=" + price +
                 '}';
     }
 }

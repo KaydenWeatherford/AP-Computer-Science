@@ -42,8 +42,12 @@ public class Patron {
     }
 
     // Implement checkInBook(Book book) and checkOutBook(Book book) methods (remove/add book from checkedOutBooks)
-    public void checkOutBook(Book book, int d, int m, int y) {
-        checkedOutBooks.add(book);
+    public void checkOutBook(Book book, double cost, int d, int m, int y) {
+        if (MONEY < cost) {
+            System.out.println("MY GOD UR BROKE!");
+        } else {
+            checkedOutBooks.add(book);
+        }
     }
 
     public void checkInBook(Book book, int d, int m, int y) {
